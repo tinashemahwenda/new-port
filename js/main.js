@@ -6,21 +6,83 @@ document.addEventListener('DOMContentLoaded', function () {
     // Mobile menu toggle
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenuButton = document.getElementById('close-mobile-menu');
+    const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+    const mobileMenuLinks = mobileMenu ? mobileMenu.querySelectorAll('a') : [];
+    const menuItems = mobileMenu ? mobileMenu.querySelectorAll('.menu-item-appear') : [];
 
     if (mobileMenuButton && mobileMenu) {
+        // Open menu
         mobileMenuButton.addEventListener('click', function () {
-            mobileMenu.classList.toggle('hidden');
+            openMenu();
+        });
+
+        // Close menu with X button
+        if (closeMenuButton) {
+            closeMenuButton.addEventListener('click', function () {
+                closeMenu();
+            });
+        }
+
+        // Close menu when clicking on backdrop
+        if (mobileMenuBackdrop) {
+            mobileMenuBackdrop.addEventListener('click', function () {
+                closeMenu();
+            });
+        }
+
+        // Close menu when clicking on a link
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                closeMenu();
+            });
+        });
+
+        // Close menu when pressing Escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && !mobileMenu.classList.contains('translate-x-full')) {
+                closeMenu();
+            }
         });
     }
 
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', function (event) {
-        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-            if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
-                mobileMenu.classList.add('hidden');
+    // Function to open the mobile menu
+    function openMenu() {
+        if (mobileMenu) {
+            mobileMenu.classList.remove('translate-x-full');
+            document.body.classList.add('overflow-hidden', 'mobile-menu-open');
+
+            // Show backdrop
+            if (mobileMenuBackdrop) {
+                mobileMenuBackdrop.classList.add('active');
             }
+
+            // Animate menu items
+            menuItems.forEach(item => {
+                setTimeout(() => {
+                    item.classList.add('active');
+                }, 100);
+            });
         }
-    });
+    }
+
+    // Function to close the mobile menu
+    function closeMenu() {
+        if (mobileMenu) {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.classList.remove('overflow-hidden', 'mobile-menu-open');
+
+            // Hide backdrop
+            if (mobileMenuBackdrop) {
+                mobileMenuBackdrop.classList.remove('active');
+            }
+
+            // Reset menu item animations
+            menuItems.forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+    }
 
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

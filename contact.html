@@ -36,17 +36,7 @@
                 </svg>
             </button>
         </div>
-        <!-- Mobile Menu -->
-        <div class="hidden container py-4 md:hidden" id="mobile-menu">
-            <nav>
-                <ul class="flex flex-col space-y-4">
-                    <li><a href="index.html" class="block font-medium hover:underline">Home</a></li>
-                    <li><a href="work.html" class="block font-medium hover:underline">Work</a></li>
-                    <li><a href="about.html" class="block font-medium hover:underline">About</a></li>
-                    <li><a href="contact.html" class="block font-medium hover:underline">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <!-- Mobile Menu will be moved outside header -->
     </header>
 
     <main>
@@ -243,6 +233,48 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Menu Backdrop -->
+    <div id="mobile-menu-backdrop" class="mobile-menu-backdrop"></div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-secondary z-50 transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="container h-full flex flex-col py-8">
+            <div class="flex justify-between items-center mb-8">
+                <a href="index.html" class="text-xl font-bold">T.Mahwenda</a>
+                <button id="close-mobile-menu" class="text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex-grow flex items-center">
+                <ul class="flex flex-col space-y-6 w-full text-xl">
+                    <li class="menu-item-appear menu-item-delay-1"><a href="index.html"
+                            class="block font-medium hover:underline py-2">Home</a></li>
+                    <li class="menu-item-appear menu-item-delay-2"><a href="work.html"
+                            class="block font-medium hover:underline py-2">Work</a></li>
+                    <li class="menu-item-appear menu-item-delay-3"><a href="about.html"
+                            class="block font-medium hover:underline py-2">About</a></li>
+                    <li class="menu-item-appear menu-item-delay-4"><a href="contact.html"
+                            class="block font-medium hover:underline py-2">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mt-auto">
+                <div class="flex space-x-4 justify-center">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                        class="text-primary hover:underline">LinkedIn</a>
+                    <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer"
+                        class="text-primary hover:underline">Dribbble</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                        class="text-primary hover:underline">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
