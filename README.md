@@ -1,4 +1,4 @@
-# Alex Chen Portfolio Website
+# Tinashe Mahwenda Portfolio Website
 
 A modern UX designer portfolio website with a minimalist black/white aesthetic, interactive elements, and smooth animations.
 
