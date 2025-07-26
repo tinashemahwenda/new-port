@@ -18,26 +18,42 @@
 </head>
 
 <body class="bg-secondary text-primary">
-    <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-secondary bg-opacity-90 backdrop-blur-sm">
-        <div class="container flex items-center justify-between py-6">
-            <a href="index.html" class="text-xl font-bold">Tinashe Mahwenda</a>
-            <nav>
-                <ul class="flex space-x-8">
-                    <li><a href="index.html" class="font-medium hover:underline">Home</a></li>
-                    <li><a href="work.html" class="font-medium hover:underline">Work</a></li>
-                    <li><a href="about.html" class="font-medium hover:underline">About</a></li>
-                    <li><a href="contact.html" class="font-medium hover:underline">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="block md:hidden" id="mobile-menu-button">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
+    <header class="fixed top-0 left-0 h-16 right-0 z-50 bg-white backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl mt-12 ml-4  font-bold text-black">Tinashe Mahwenda</a>
+                </div>
 
+                <!-- Desktop Nav -->
+                <nav class=" p-8 mr-4 space-x-6">
+                    <a href="#" class="p-4 text-black hover:text-indigo-300">Home</a>
+                    <a href="#" class="p-4 text-black hover:text-indigo-300">About</a>
+                    <a href="#" class="p-4 text-black hover:text-indigo-300">Services</a>
+                    <a href="#" class="p-4 text-black hover:text-indigo-300">Contact</a>
+                </nav>
+
+                <!-- Hamburger (mobile only) -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-black focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Nav -->
+            <div id="mobile-menu" class="hidden md:hidden mt-2">
+                <a href="#" class="block py-2 text-black hover:text-indigo-300">Home</a>
+                <a href="#" class="block py-2 text-black hover:text-indigo-300">About</a>
+                <a href="#" class="block py-2 text-black hover:text-indigo-300">Services</a>
+                <a href="#" class="block py-2 text-black hover:text-indigo-300">Contact</a>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -78,11 +94,11 @@
             <div class="container">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div class="animate-on-scroll">
-                        <img src="assets/images/about-tinashe-mahwenda-flat.png" alt="Alex Chen"
+                        <img src="assets/images/about-tinashe-mahwenda-flat.png" alt="Tinashe Mahwenda"
                             class="rounded-lg shadow-lg">
                     </div>
                     <div class="animate-on-scroll stagger-1">
-                        <h2 class="text-heading mb-6">About Me</h2>
+                        <h2 class="text-heading text-black mb-6">About Me</h2>
                         <p class="mb-6 text-lg">I'm a Certified UX Designer with a passion for creating intuitive and
                             engaging
                             digital experiences that solve real user problems.</p>
@@ -241,49 +257,20 @@
         </div>
     </div>
 
-    <!-- Mobile Menu Overlay 
-    <div id="mobile-menu"
-        class="fixed inset-0 bg-secondary z-50 transform translate-x-full transition-transform duration-300 ease-in-out">
-        <div class="container h-full flex flex-col py-8">
-            <div class="flex justify-between items-center mb-8">
-                <a href="index.html" class="text-xl font-bold">T.Mahwenda</a>
-                <button id="close-mobile-menu" class="text-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-            <nav class="flex-grow flex items-center">
-                <ul class="flex flex-col space-y-6 w-full text-xl">
-                    <li class="menu-item-appear menu-item-delay-1"><a href="index.html"
-                            class="block font-medium hover:underline py-2">Home</a></li>
-                    <li class="menu-item-appear menu-item-delay-2"><a href="work.html"
-                            class="block font-medium hover:underline py-2">Work</a></li>
-                    <li class="menu-item-appear menu-item-delay-3"><a href="about.html"
-                            class="block font-medium hover:underline py-2">About</a></li>
-                    <li class="menu-item-appear menu-item-delay-4"><a href="contact.html"
-                            class="block font-medium hover:underline py-2">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="mt-auto">
-                <div class="flex space-x-4 justify-center">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-                        class="text-primary hover:underline">LinkedIn</a>
-                    <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer"
-                        class="text-primary hover:underline">Dribbble</a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                        class="text-primary hover:underline">Twitter</a>
-                </div>
-            </div>
-        </div>
-    </div>
--->
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/modal.js"></script>
+
+    <script>
+        // Toggle menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/modal.js" defer></script>
+
 </body>
 
 </html>
