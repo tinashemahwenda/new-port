@@ -139,7 +139,7 @@ function getProjectContent(projectId) {
                     </div>
                     <div>
                         <h3 class="text-lg font-bold mb-2">Timeline</h3>
-                        <p>2 months (2025)</p>
+                        <p>4 weeks (2025)</p>
                     </div>
                     <div>
                         <h3 class="text-lg font-bold mb-2">Tools</h3>

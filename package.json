@@ -1,5 +1,5 @@
 {
-    "name": "alex-chen-portfolio",
+    "name": "tianshe-mahwenda-portfolio",
     "version": "1.0.0",
     "description": "Alex Chen UX Designer Portfolio",
     "main": "index.js",
@@ -13,7 +13,7 @@
         "design",
         "tailwind"
     ],
-    "author": "Alex Chen",
+    "author": "Tinashe Mahwenda",
     "license": "MIT",
     "devDependencies": {
         "@tailwindcss/aspect-ratio": "^0.4.2",

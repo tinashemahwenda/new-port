@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work | Tinashe Mahwenda| UX Designer</title>
     <meta name="description" content="Explore Tinashe Mahwenda's UX design projects and case studies">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,26 +18,27 @@
 </head>
 
 <body class="bg-secondary text-primary">
-    <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-secondary bg-opacity-90 backdrop-blur-sm">
-        <div class="container flex items-center justify-between py-6">
-            <a href="index.html" class="text-xl font-bold">T.Mahwenda</a>
-            <nav>
-                <ul class="flex space-x-8">
-                    <li><a href="index.html" class="font-medium hover:underline">Home</a></li>
-                    <li><a href="work.html" class="font-medium hover:underline">Work</a></li>
-                    <li><a href="about.html" class="font-medium hover:underline">About</a></li>
-                    <li><a href="contact.html" class="font-medium hover:underline">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="block md:hidden" id="mobile-menu-button">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
+    <header>
+        <div class="logo">T.Mahwenda</div>
+        <nav class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/work.html">Work</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <!-- Mobile Menu will be moved outside header -->
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
     </header>
 
     <main>
@@ -318,6 +320,12 @@
     </div>-->
 
     <!-- Scripts -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/modal.js"></script>

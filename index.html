@@ -7,6 +7,7 @@
     <title>Tinashe Mahwenda| UX Designer</title>
     <meta name="description"
         content="Tinashe Mahwenda is a UX designer focused on creating human-centered digital experiences">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,45 +15,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono&display=swap"
         rel="stylesheet">
     <!-- Favicon -->
-    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body class="bg-secondary text-primary">
-    <header class="fixed top-0 left-0 h-16 right-0 z-50 bg-white backdrop-blur-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex-shrink-0">
-                    <a href="#" class="text-xl mt-12 ml-4  font-bold text-black">Tinashe Mahwenda</a>
-                </div>
+    <header>
+        <div class="logo">T.Mahwenda</div>
+        <nav class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/work.html">Work</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
 
-                <!-- Desktop Nav -->
-                <nav class=" p-8 mr-4 space-x-6">
-                    <a href="#" class="p-4 text-black hover:text-indigo-300">Home</a>
-                    <a href="#" class="p-4 text-black hover:text-indigo-300">About</a>
-                    <a href="#" class="p-4 text-black hover:text-indigo-300">Services</a>
-                    <a href="#" class="p-4 text-black hover:text-indigo-300">Contact</a>
-                </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-                <!-- Hamburger (mobile only) -->
-                <div class="md:hidden">
-                    <button id="menu-btn" class="text-black focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Mobile Nav -->
-            <div id="mobile-menu" class="hidden md:hidden mt-2">
-                <a href="#" class="block py-2 text-black hover:text-indigo-300">Home</a>
-                <a href="#" class="block py-2 text-black hover:text-indigo-300">About</a>
-                <a href="#" class="block py-2 text-black hover:text-indigo-300">Services</a>
-                <a href="#" class="block py-2 text-black hover:text-indigo-300">Contact</a>
-            </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
         </div>
     </header>
 
@@ -66,7 +53,7 @@
             <div class="container relative z-10">
                 <div class="max-w-3xl">
                     <h1 class="text-hero font-bold text-black animate-fade-in">
-                        Hi, I'm Tinashe
+                        It's Tinashe👌
                     </h1>
                     <p class="mt-4 text-2xl text-gray-500 animate-slide-up" style="animation-delay: 0.3s;">
                         Designing digital experiences that feel human
@@ -259,13 +246,10 @@
 
 
     <script>
-        // Toggle menu
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
     </script>
     <script src="js/main.js" defer></script>
     <script src="js/animations.js" defer></script>
