@@ -167,7 +167,7 @@ function getProjectContent(projectId) {
                         These goals helped me understand the main priority for the app and the key USP for the product</p>
                     
                     <h3>My Role</h3>
-                    <p>As the lead designer, I was responsible for:</p>
+                    <p>As the designer, I was responsible for:</p>
                     <ul>
                         <li>Auditing the original app and identifying pain points</li>
                         <li>Conducting user research with individuals and health workers</li>
@@ -245,7 +245,7 @@ function getProjectContent(projectId) {
                     <h3 class="pt-8">What's Next</h3>
                     <ul>
                     <li>The app is now in pilot deployment across Zimbabwe and later Malawi</li>
-                    <li>90% improvement in user satisfaction (posttest surveys)</li>
+                    <li>90% improvement in user satisfaction (post-test surveys)</li>
                     <li>The organisation has also requested translated versions in Shona and Chichewa</li>
                     </ul>                </div>
 
