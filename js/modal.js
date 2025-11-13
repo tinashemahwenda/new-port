@@ -349,6 +349,65 @@ function getProjectContent(projectId) {
                 
             </div>
         `,
+        project10: `
+            <div class="project-detail">
+                <h2 class="text-heading mb-6">Old Mutual Funeral Services Saas</h2>
+                <p class"mb-8">I led the Product Design of a Funeral Service SaaS platform developed for Old Mutual, an extension of the Muzukuru Memorial Management System. As the sole designer on a cross-functional team of two frontend and two backend developers, I was responsible for the entire design process, from ideation and user research to wireframing, prototyping, and final UI design. <br><br>The goal was to create a seamless digital experience that simplified funeral service management, improved accessibility for clients, and aligned with Old Mutual’s service delivery standards.
+<br><br>Contact mahwendatinashe@gmail.com for full case study</p>
+                 <div class="mb-8 mt-8 aspect-w-16 aspect-h-9">
+                    <img src="assets/images/projects/old-mutual.png" alt="Old Mutual Image" class="object-cover w-full h-full rounded-lg">
+                </div>
+               
+                <div class="mb-8 mt-8 aspect-w-16 aspect-h-9">
+                    <img src="assets/images/projects/old-mutual-schedule.png" alt="Old Mutual Image" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="mb-8 mt-8 aspect-w-16 aspect-h-9">
+                    <img src="assets/images/projects/old-mutual-stream.png" alt="Old Mutual Image" class="object-cover w-full h-full rounded-lg">
+                </div>
+                 <div class="mb-8 mt-8 aspect-w-16 aspect-h-9">
+                    <img src="assets/images/projects/old-mutual-memorial.png" alt="Old Mutual Image" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="mb-8 mt-8 aspect-w-16 aspect-h-9">
+                    <img src="assets/images/projects/old-mutual-reports.png" alt="Old Mutual Image" class="object-cover w-full h-full rounded-lg">
+                </div>
+                
+                
+            </div>
+        `,
+        project11: `
+            <div class="project-detail">
+                <h2 class="text-heading mb-6">CHEMA Platform</h2>
+                <p class="mb-8">I'm the lead for the Product Design for CHEMA, a funeral crowdfunding platform built to support both local and diaspora communities. The platform enables users to send donations seamlessly through Mukuru, EcoCash, and other payment methods. <br><br>As the lead designer, I worked closely with a two-member development team (one frontend and one full-stack developer) to shape the platform’s vision, overseeing user experience design, interface design, and design system consistency to ensure an intuitive and trustworthy giving experience.</p>
+                
+                
+                <div class="mb-8 aspect-w-4 aspect-h-3">
+                    <img src="assets/images/projects/cause.png" alt="CHEMA" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="mb-8 aspect-w-4 aspect-h-3">
+                    <img src="assets/images/projects/upload.png" alt="CHEMA" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="mb-8 aspect-w-4 aspect-h-3">
+                    <img src="assets/images/projects/picture.png" alt="CHEMA" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="mb-8 aspect-w-4 aspect-h-3">
+                    <img src="assets/images/projects/confirm.png" alt="CHEMA" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="mb-8 aspect-w-4 aspect-h-3">
+                    <img src="assets/images/projects/final.png" alt="CHEMA" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="mb-8 aspect-w-4 aspect-h-3">
+                    <img src="assets/images/projects/donations.png" alt="CHEMA" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="mb-8 aspect-w-4 aspect-h-3">
+                    <img src="assets/images/projects/admin.png" alt="CHEMA" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="mb-8 aspect-w-4 aspect-h-3">
+                    <img src="assets/images/projects/individual.png" alt="CHEMA" class="object-cover w-full h-full rounded-lg">
+                </div>
+                
+            </div>
+        `,
+
         project6: `
             <div class="project-detail">
                 <h2 class="text-heading mb-6">Skwama Splash Screen</h2>  
